@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('git repo & clean') {
+        stage('clean') {
             steps {
                sh "rm -rf TicketBookingServiceJunitTesting"
                 sh "mvn clean -f TicketBookingServiceJunitTesting"
